@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Ratings</title>
+</head>
+<body>
+    <div>
+        <h1>Ralph's Movie Ratings</h1>
+    </div>
+    <div>
+        <form id="movie_ratings">
+        <label for="title">Movie Title</label><br>
+        <input type="text" placeholder = "Movie title" id ="title"><br>
+        <label for="rating">Rating (1-10)</label><br>
+        <input type="number" placeholder = "5" min="1" max="10" id="rating"><br>
+        <button id="submit">Submit</button>
+    </form>
+    </div>
+    <hr>
+    <div id="reviewDiv">
+        <h3>My Movie Reviews</h3>
+        <button id="title_sort">Sort by title</button>
+        <button id="rating_sort">Sort by rating</button>
+        <p id="reviews"></p>
+    </div>
+    </body>
+    <script
+    src="https://code.jquery.com/jquery-3.7.1.js"
+    integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"></script> 
+    <script src="movie_script.js"></script>
+</body>
+</html>
